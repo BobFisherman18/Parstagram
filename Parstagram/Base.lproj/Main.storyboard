@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,6 +146,12 @@
                         <viewLayoutGuide key="safeArea" id="Q1g-Cf-uHT"/>
                     </view>
                     <navigationItem key="navigationItem" id="0O9-aW-9J1">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="hbo-hZ-K5k">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onLogoutButton:" destination="szF-Tf-0Qm" id="8cX-Um-bMd"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="XDJ-iF-Rt3">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -199,6 +205,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="57O-VF-zP1">
                         <barButtonItem key="leftBarButtonItem" image="feed_tab" style="plain" id="ip8-Zi-yLv">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="cancel:" destination="ERz-Cu-GKI" id="RHc-XK-5O7"/>
                             </connections>
@@ -237,7 +244,7 @@
         <!--Navigation Controller-->
         <scene sceneID="6kK-aj-zOD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Voy-cb-Jcq" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Voy-cb-Jcq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qkE-bs-oNu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
