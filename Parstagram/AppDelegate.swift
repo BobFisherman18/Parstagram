@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configuration.server = "https://mysterious-bayou-01313.herokuapp.com/parse"
             })
         )
-        /*
+          //added this code in both SceneDelegate.swift and AppDelegate.swift below
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
             let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
@@ -32,15 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = feedNavigationController
             
         }
-         */
+         
         
         return true
     }
-    /*
-    func applicationWillResignActive(_ application: UIApplication) {
-        <#code#>
-    }
-    */
+   
 
     // MARK: UISceneSession Lifecycle
 
